@@ -22,7 +22,8 @@ Every gem must:
 - start with a `--#mathlib <commit>` comment indicating a commit against which the file will build
 - only import files from mathlib
 - be `sorry`-free
-- be less than 100 lines (not including comments)
+- be `example`-free
+- be reasonable short (e.g. <200 lines, not including comments)
 - compile within a reasonable amount of time (e.g. 1 minute in CI)
 - not produce any output
 
