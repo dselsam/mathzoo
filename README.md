@@ -6,7 +6,7 @@ Mathzoo is a user maintained collection of mathematical formalizations in the [L
 
 1. *Minimal requirements*. Gems will be accepted without detailed code review. There are no requirements on proof style nor formatting conventions.
 
-1. *Minimal maintainance*. Gems need not be kept up-to-date with mathlib. Instead, every file must begin with a comment `--#mathlib <commit>` indicating the last known commit against which the file will build.
+1. *Minimal maintainance*. Gems need not be kept up-to-date with mathlib. Instead, every file must begin with a comment `-- #mathlib YYYY-MM-DD <commit>` indicating the last known commit against which the file will build.
 
 1. *Dataset friendliness*. We strongly encourage the inclusion of metadata that will make gems more useful as training data for both mathematical problem solving (e.g. [The IMO Grand Challenge](https://imo-grand-challenge.github.io/)) and auto-formalization.
 
