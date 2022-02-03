@@ -23,7 +23,7 @@ Every gem must:
 - only import files from mathlib
 - be `sorry`-free
 - be `example`-free
-- be reasonable short (e.g. <200 lines, not including comments)
+- be reasonably short (e.g. <200 lines, not including comments)
 - compile within a reasonable amount of time (e.g. 1 minute in CI)
 - not produce any output
 
