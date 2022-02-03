@@ -29,9 +29,9 @@ Every gem must:
 
 We do allow gems that consist of a formal statement without proof, in which case the gem must end with an `axiom` declaration. Gems with proofs must end with a `theorem` declaration.
 
-We also strongly encourage gem-writers to include:
+We also encourage gem-writers to include:
 
 - an informal statement of the problem
-- a description of the problem's source
+- a description of where the problem came from
 - links to any proofs consulted during the formalization
 - ideally: detailed comments aligning an informal proof to the formal one
