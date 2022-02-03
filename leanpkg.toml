@@ -1,0 +1,8 @@
+[package]
+name = "mathzoo"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.38.0"
+path = "."
+
+[dependencies]
+mathlib = { git = "https://github.com/leanprover-community/mathlib", rev = "30a731ca565b92955e40274652f4c2b6f4db79f4" }
