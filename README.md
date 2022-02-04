@@ -19,7 +19,7 @@ Gems are organized in a directory hierarchy that reflects their provenance as mu
 Every gem must:
 
 - be in its own file 
-- start with a `--#mathlib <commit>` comment indicating a commit against which the file will build
+- start with a `-- #mathlib YYYY-MM-DD <commit>` comment indicating a commit against which the file will build
 - only import files from mathlib
 - be `sorry`-free
 - be `example`-free
