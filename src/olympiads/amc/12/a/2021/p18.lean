@@ -11,6 +11,7 @@ open_locale big_operators
 open_locale real
 open_locale nat
 open_locale topological_space
+open_locale rat
 
 axiom amc12a_2021_p18
   (f : ℚ → ℝ)
