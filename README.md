@@ -31,7 +31,7 @@ We do allow gems that consist of a formal statement without proof, in which case
 
 We also encourage gem-writers to include:
 
-- an informal statement of the problem
-- a description of where the problem came from
+- a description of where the problem came from (if not implied by filename)
+- an informal statement of the problem (if not easily accessible online)
 - links to any proofs consulted during the formalization
 - ideally: detailed comments aligning an informal proof to the formal one
