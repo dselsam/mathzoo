@@ -338,7 +338,7 @@ def format_errors(errors):
         if errno == ERR_COP:
             output_message(path, line_nr, "ERR_COP", "Malformed or missing copyright header")
         if errno == ERR_IMP:
-            output_message(path, line_nr, "ERR_IMP", "More than one file imported per line")
+            output_message(path, line_nr, "ERR_IMP", "Illegal import statement")
         if errno == ERR_MOD:
             output_message(path, line_nr, "ERR_MOD", "Module docstring missing, or too late")
         if errno == ERR_LIN:
