@@ -361,8 +361,8 @@ def format_errors(errors):
 def lint(path):
     with path.open(encoding="utf-8") as f:
         lines = f.readlines()
-        errs = long_lines_check(lines, path)
-        format_errors(errs)
+        # errs = long_lines_check(lines, path)
+        # format_errors(errs)
         (b, errs) = import_only_check(lines, path)
         if b:
             format_errors(errs)
@@ -379,8 +379,8 @@ def lint(path):
         format_errors(errs)
         errs = indent_check(lines, path)
         format_errors(errs)
-        errs = braces_check(lines, path)
-        format_errors(errs)
+        # errs = braces_check(lines, path)
+        # format_errors(errs)
         errs = unfreeze_local_instances_check(lines, path)
         format_errors(errs)
 
