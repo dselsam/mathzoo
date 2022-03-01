@@ -2,7 +2,7 @@
 /-
 Copyright (c) 2020 Ruben Van de Velde, Stanislas Polu. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Ruben Van de Velde, Stanislas Polu
+Authors: Ruben Van de Velde and Stanislas Polu
 -/
 
 import data.real.basic
