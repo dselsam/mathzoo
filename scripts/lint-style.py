@@ -241,6 +241,8 @@ def import_only_check(lines, path):
         if imports[0] != "import":
             import_only_file = False
             break
+        if imports[1].startswith("mathzoo") and not imports[1].startswith("mathzoo.imports"):
+            errors += [(ERR_IMP, line_nr, path)]
         if len(imports) > 2:
             if imports[2] == "--":
                 continue
