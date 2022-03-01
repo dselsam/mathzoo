@@ -286,7 +286,8 @@ def regular_check(lines, path):
             continue
         words = line.split()
         if words[0] != "import" and words[0] != "/-!":
-            errors += [(ERR_MOD, line_nr, path)]
+            # Note: we do not require module doc strings.
+            # errors += [(ERR_MOD, line_nr, path)]
             break
         if words[0] == "/-!":
             break
