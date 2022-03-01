@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 git diff --name-only bad-lint | while read FILE ; do
     echo "Try ${FILE}"
     if [ -f ${FILE} ];
