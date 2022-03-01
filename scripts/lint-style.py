@@ -250,6 +250,8 @@ def import_only_check(lines, path):
                 errors += [(ERR_IMP, line_nr, path)]
     return (import_only_file, errors)
 
+MATHLIB_COMMIT_HEADER_PAT = re.compile(r"--\s*#mathlib \d{4}-\d{2}-\d{2} \w{40}")
+
 def regular_check(lines, path):
     errors = []
     copy_started = False
@@ -257,6 +259,9 @@ def regular_check(lines, path):
     copy_start_line_nr = 0
     copy_lines = ""
     for line_nr, line in enumerate(lines, 1):
+        # This header is only necessary for bit-rotted files.
+        if line_nr == 0 and MATHLIB_COMMIT_HEADER_PAT.match(line) is not None:
+            continue            
         if not copy_started and line == "\n":
             errors += [(ERR_COP, copy_start_line_nr, path)]
             continue
