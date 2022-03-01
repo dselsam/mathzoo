@@ -15,5 +15,4 @@ begin
   ring_nf,
   ring_nf,
   rw [pow_two, pow_two, complex.I_mul_I],
-  ring,
 end
