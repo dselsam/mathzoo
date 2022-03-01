@@ -260,7 +260,7 @@ def regular_check(lines, path):
     copy_lines = ""
     for line_nr, line in enumerate(lines, 1):
         # This header is only necessary for bit-rotted files.
-        if line_nr == 0 and MATHLIB_COMMIT_HEADER_PAT.match(line) is not None:
+        if line_nr == 1 and MATHLIB_COMMIT_HEADER_PAT.match(line) is not None:
             continue            
         if not copy_started and line == "\n":
             errors += [(ERR_COP, copy_start_line_nr, path)]
