@@ -25,7 +25,7 @@ absolute path.
 This script can also be used to regenerate the list of allowed / ignored style
 exceptions by redirecting the output to ``style-exceptions.txt``:
 
-    $ ./scripts/lint-style.py $(find src archive -name '*.lean') > scripts/style-exceptions.txt
+    $ ./scripts/lint-style.py [fail|pass] $(find src archive -name '*.lean') > scripts/style-exceptions.txt
 """
 
 from pathlib import Path
@@ -383,11 +383,8 @@ def lint(path):
         errs = unfreeze_local_instances_check(lines, path)
         format_errors(errs)
 
-for filename in sys.argv[1:]:
+for filename in sys.argv[2:]:
     lint(Path(filename))
 
-# if "exceptions" is empty,
-# we're trying to generate style-exceptions.txt,
-# so new exceptions are expected
-if new_exceptions and len(exceptions) > 0:
+if new_exceptions and sys.argv[1] == "fail":
     exit(1)
